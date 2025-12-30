@@ -1,0 +1,34 @@
+# Build with tests
+cmake -DTLSF_BUILD_TESTS=ON ..
+
+# Build as shared library
+cmake -DTLSF_BUILD_SHARED=ON ..
+
+# Build without examples
+cmake -DTLSF_BUILD_EXAMPLES=OFF ..
+
+
+
+#include "tlsf.h"
+
+// Initialize a memory pool
+void* memory = malloc(1024 * 1024);  // 1MB pool
+tlsf_t pool = tlsf_create(memory, 1024 * 1024);
+
+// Allocate memory
+void* ptr = tlsf_malloc(pool, 256);
+
+// Use memory...
+
+// Free memory
+tlsf_free(pool, ptr);
+
+// Destroy pool
+tlsf_destroy(pool);
+free(memory);
+
+
+Testing
+
+cd build
+ctest --output-on-failure
