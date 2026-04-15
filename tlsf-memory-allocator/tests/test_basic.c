@@ -232,7 +232,7 @@ static void test_walk_function(void) {
 }
 
 int main(void) {
-    printf("=== TLSF Basic Tests ===\n\n");
+    printf("=== TLSF Basic Tests   ===\n\n");
     
     test_basic_allocation();
     test_multiple_allocations();
