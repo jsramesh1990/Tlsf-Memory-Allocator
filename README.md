@@ -10,17 +10,17 @@
 
 ##  Table of Contents
 - [Overview](#-overview)
-- [✨ Features](#-features)
-- [🚀 Quick Start](#-quick-start)
-- [🔧 Build Instructions](#-build-instructions)
-- [📖 API Usage](#-api-usage)
-- [🎯 Algorithm Flow](#-algorithm-flow)
-- [🏗️ Architecture](#-architecture)
-- [📊 Performance](#-performance)
-- [🧪 Testing](#-testing)
-- [📁 Project Structure](#-project-structure)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
+- [ Features](#-features)
+- [ Quick Start](#-quick-start)
+- [ Build Instructions](#-build-instructions)
+- [ API Usage](#-api-usage)
+- [ Algorithm Flow](#-algorithm-flow)
+- [ Architecture](#-architecture)
+- [ Performance](#-performance)
+- [ Testing](#-testing)
+- [ Project Structure](#-project-structure)
+- [ Contributing](#-contributing)
+- [ License](#-license)
 
 ##  Overview
 
@@ -39,19 +39,19 @@ tlsf_destroy(pool);
 ##  Features
 
 ###  Core Features
-- **⚡ O(1) Operations** - Constant time allocation and deallocation
-- **📉 Low Fragmentation** - Efficient memory utilization with two-level segregation
-- **⏱️ Deterministic Performance** - Predictable worst-case execution time
-- **🔒 Thread Safety** - Optional mutex protection for concurrent access
-- **🏗️ Small Overhead** - Minimal metadata (~16 bytes per block)
-- **🌐 Platform Independent** - Portable across different architectures
+- ** O(1) Operations** - Constant time allocation and deallocation
+- ** Low Fragmentation** - Efficient memory utilization with two-level segregation
+- ** Deterministic Performance** - Predictable worst-case execution time
+- ** Thread Safety** - Optional mutex protection for concurrent access
+- ** Small Overhead** - Minimal metadata (~16 bytes per block)
+- ** Platform Independent** - Portable across different architectures
 
 ###  Advanced Features
-- **🔧 Configurable Parameters** - Tune for specific use cases
-- **🐛 Debug Support** - Memory filling patterns and integrity checks
-- **📊 Statistics** - Runtime performance metrics (optional)
-- **🎯 Aligned Allocation** - Support for arbitrary alignment requirements
-- **🔄 Reallocation** - In-place expansion when possible
+- ** Configurable Parameters** - Tune for specific use cases
+- ** Debug Support** - Memory filling patterns and integrity checks
+- ** Statistics** - Runtime performance metrics (optional)
+- ** Aligned Allocation** - Support for arbitrary alignment requirements
+- ** Reallocation** - In-place expansion when possible
 
 ##  Quick Start
 
@@ -183,7 +183,7 @@ graph TD
     F --> G[Update Bitmaps]
 ```
 
-### 📊 Two-Level Segregation
+###  Two-Level Segregation
 ```
 Size Classes:
 ┌─────────────────────────────────────────┐
